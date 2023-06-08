@@ -8,6 +8,9 @@ import (
 )
 
 var origins = []string{
+	"https://harisriyoni3.github.io",
+	"https://harisriyoni.github.io",
+	"http://127.0.0.1:5500",
 	"https://auth.ulbi.ac.id",
 	"https://sip.ulbi.ac.id",
 	"https://euis.ulbi.ac.id",
@@ -22,7 +25,8 @@ var Internalhost string = os.Getenv("INTERNALHOST") + ":" + os.Getenv("PORT")
 
 var Cors = cors.Config{
 	AllowOrigins:     strings.Join(origins[:], ","),
-	AllowHeaders:     "Origin,Login",
+	AllowMethods:     "GET,HEAD,OPTIONS,POST,PUT",
+	AllowHeaders:     "Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Request-Headers, token, Access-Control-Allow-Origin",
 	ExposeHeaders:    "Content-Length",
 	AllowCredentials: true,
 }
