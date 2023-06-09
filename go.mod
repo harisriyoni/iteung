@@ -3,12 +3,12 @@ module github.com/harisriyoni3/iteung
 go 1.20
 
 require (
-	github.com/aiteung/atdb v0.0.11
+	github.com/aiteung/atdb v0.0.10
 	github.com/aiteung/musik v0.0.5
 	github.com/gocroot/kampus v0.0.3
-	github.com/gofiber/fiber/v2 v2.46.0
-	github.com/gofiber/websocket/v2 v2.2.1
-	github.com/whatsauth/whatsauth v0.1.98
+	github.com/gofiber/fiber/v2 v2.42.0
+	github.com/gofiber/websocket/v2 v2.1.4
+	github.com/whatsauth/whatsauth v0.1.83
 )
 
 require (
