@@ -35,6 +35,7 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 	}
 
 }
+
 func GetHome(c *fiber.Ctx) error {
 	getip := musik.GetIPaddress()
 	return c.JSON(getip)

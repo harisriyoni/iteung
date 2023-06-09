@@ -1,9 +1,10 @@
 package url
 
 import (
+	"github.com/harisriyoni3/iteung/controller"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
-	"github.com/harisriyoni3/iteung/controller"
 )
 
 func Web(page *fiber.App) {
