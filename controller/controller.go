@@ -54,7 +54,6 @@ func GetSurat(c *fiber.Ctx) error {
 	getstats := gaga.GetSurat("Kamu", config.MongoConn, user)
 	return c.JSON(getstats)
 }
-
 func InsertDataSuratChat(c *fiber.Ctx) error {
 	database := config.MongoConn
 	var srt gege.Surat
