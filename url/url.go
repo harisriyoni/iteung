@@ -12,7 +12,7 @@ func Web(page *fiber.App) {
 	page.Get("/ws/whatsauth/qr", websocket.New(controller.WsWhatsAuthQR)) //websocket whatsauth
 	page.Get("/", controller.GetHome)
 	page.Get("/nama", controller.GetUserDataNama)
-	page.Get("/surat", controller.GetDataSurat)
+	page.Get("/surat/kamu", controller.GetDataSurat)
 	page.Get("/:telepon", controller.GetUserDataNomer)
 	page.Post("/surat/insert", controller.InsertDataSuratChat)
 }
