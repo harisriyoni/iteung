@@ -41,19 +41,20 @@ func GetHome(c *fiber.Ctx) error {
 	return c.JSON(getip)
 }
 
-// func GetUserDataNomer(c *fiber.Ctx) error {
-// 	getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
-// 	return c.JSON(getstats)
-// }
+//	func GetUserDataNomer(c *fiber.Ctx) error {
+//		getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
+//		return c.JSON(getstats)
+//	}
+func GetSurat(c *fiber.Ctx) error {
+	getstats := gaga.GetSurat("Kamu", config.MongoConn, user)
+	return c.JSON(getstats)
+}
 
 func GetUserDataNama(c *fiber.Ctx) error {
 	getstats := gaga.GetNamaUser("Haris Riyoni", config.MongoConn, user)
 	return c.JSON(getstats)
 }
-func GetSurat(c *fiber.Ctx) error {
-	getstats := gaga.GetSurat("1234", config.MongoConn, user)
-	return c.JSON(getstats)
-}
+
 func InsertDataSuratChat(c *fiber.Ctx) error {
 	database := config.MongoConn
 	var srt gege.Surat
