@@ -50,8 +50,8 @@ func GetUserDataNama(c *fiber.Ctx) error {
 	getstats := gaga.GetNamaUser("Haris Riyoni", config.MongoConn, user)
 	return c.JSON(getstats)
 }
-func GetDataSurat(c *fiber.Ctx) error {
-	getstats := gaga.GetSurat("haris", config.MongoConn, user)
+func GetSurat(c *fiber.Ctx) error {
+	getstats := gaga.GetSurat("Kamu", config.MongoConn, user)
 	return c.JSON(getstats)
 }
 
