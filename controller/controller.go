@@ -41,10 +41,10 @@ func GetHome(c *fiber.Ctx) error {
 	return c.JSON(getip)
 }
 
-func GetUserDataNomer(c *fiber.Ctx) error {
-	getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
-	return c.JSON(getstats)
-}
+// func GetUserDataNomer(c *fiber.Ctx) error {
+// 	getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
+// 	return c.JSON(getstats)
+// }
 
 func GetUserDataNama(c *fiber.Ctx) error {
 	getstats := gaga.GetNamaUser("Haris Riyoni", config.MongoConn, user)
