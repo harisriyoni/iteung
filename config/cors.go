@@ -23,7 +23,6 @@ var origins = []string{
 	"https://gocroot.github.io/",
 	"https://gocroot-baru.herokuapp.com/",
 }
-
 var Internalhost string = os.Getenv("INTERNALHOST") + ":" + os.Getenv("PORT")
 
 var Cors = cors.Config{
